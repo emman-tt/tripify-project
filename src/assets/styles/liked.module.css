@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amarante&family=Carter+One&family=Nosifer&family=Permanent+Marker&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.liked {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 10px;
+  width: 90%;
+  border-radius: 19px;
+  border: 0.3px solid rgba(38, 37, 37, 0.121);
+  overflow: hidden;
+}
+
+.head {
+  height: max-content;
+  padding-inline: 5%;
+  padding-block: 1%;
+  border-bottom: 2.7px double gray;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 3%;
+  padding-block: 3%;
+  gap: 30px;
+  row-gap: 40px;
+  overflow: auto;
+  scrollbar-width: none;
+  position: relative;
+  padding-right: 0px;
+}
+
+.each {
+  width: 300px;
+  background-color: rgba(124, 176, 248, 0.215);
+
+  padding: 1%;
+  border-radius: 15px;
+  height: max-content;
+
+  background-color: rgba(216, 217, 217, 0.147);
+  border-radius: 10px;
+  position: relative;
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  box-shadow: 1px 2px 4px rgba(24, 45, 45, 0.44);
+}
+
+.remove {
+  padding: 4%;
+  background-color: rgb(231, 84, 59);
+  border: 0px;
+  border-radius: 10px;
+  width: 20%;
+  display: flex;
+  justify-self: flex-end;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  font-size: 14px;
+  align-self: flex-end;
+}
+
+.image {
+  width: 100%;
+  height: 9em;
+
+  margin-top: 20px;
+  border-radius: 13px;
+  position: relative;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.description {
+  min-height: 5em;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+  color: rgba(76, 81, 85, 0.988);
+}
+
+.add {
+  background-color: rgb(253, 253, 253);
+  border: 1px solid rgb(28, 115, 235);
+  color: black;
+  height: auto;
+  padding-block: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.add:hover {
+  background-color: rgb(28, 115, 235);
+  color: white;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.889);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 6;
+}
+
+.notFound {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.anime {
+  height: 40%;
+  width: 50%;
+}
+
+.advice {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.advice span {
+  color: rgb(224, 37, 37);
+  font-size: 90px;
+  margin-inline: 14px;
+}
+
+@media (max-width: 1280px) {
+  .liked {
+    width: 92%;
+  }
+
+  .box {
+    padding-inline: 0%;
+    gap: 20%;
+    row-gap: 35px;
+    justify-content: space-evenly;
+  }
+
+  .each {
+    width: 280px;
+  }
+
+  .advice {
+    font-size: 28px;
+  }
+
+  .advice span {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .liked {
+    width: 95%;
+    padding: 8px;
+    border-radius: 15px;
+  }
+
+  .head {
+    padding-inline: 4%;
+    padding-block: 1.5%;
+  }
+
+  .box {
+    padding-inline: 4%;
+    padding-block: 2.5%;
+    gap: 20px;
+    row-gap: 30px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .each {
+    width: 260px;
+  }
+
+  .image {
+    height: 8em;
+  }
+
+  .description {
+    font-size: 14px;
+    min-height: 4.5em;
+  }
+
+  .remove {
+    width: 25%;
+    font-size: 13px;
+    padding: 3.5%;
+  }
+
+  .advice {
+    font-size: 26px;
+  }
+
+  .advice span {
+    font-size: 70px;
+    margin-inline: 12px;
+  }
+
+  .anime {
+    width: 60%;
+    height: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .liked {
+    width: 98%;
+    padding: 6px;
+  }
+
+  .head {
+    padding-inline: 3%;
+    padding-block: 2%;
+    border-bottom: 2px double gray;
+  }
+
+  .box {
+    gap: 18px;
+    row-gap: 25px;
+    padding-block: 6em;
+  }
+
+  .each {
+    width: 240px;
+    padding: 2%;
+    padding-bottom: 18px;
+  }
+
+  .image {
+    height: 8.5em;
+    margin-top: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+    min-height: 4em;
+    margin-top: 8px;
+  }
+
+  .remove {
+    width: 28%;
+    font-size: 12px;
+    padding: 3%;
+  }
+
+  .add {
+    padding-block: 9px;
+    font-size: 14px;
+  }
+
+  .advice {
+    font-size: 24px;
+    padding-inline: 5%;
+  }
+
+  .advice span {
+    font-size: 60px;
+    margin-inline: 10px;
+  }
+
+  .anime {
+    width: 70%;
+    height: 32%;
+  }
+
+  .box {
+    padding-top: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .liked {
+    width: 100%;
+    padding: 5px;
+    border-radius: 12px;
+    padding-top: 6em;
+  }
+
+  .head {
+    padding-inline: 2.5%;
+    padding-block: 2.5%;
+  }
+
+  .box {
+    padding-inline: 2%;
+    padding-block: 2%;
+    gap: 15px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .each {
+    width: 220px;
+    padding: 2.5%;
+    padding-bottom: 15px;
+    border-radius: 12px;
+  }
+
+  .image {
+    height: 8.5em;
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+
+  .description {
+    font-size: 13px;
+    min-height: 3.5em;
+    margin-top: 8px;
+  }
+
+  .remove {
+    width: 30%;
+    font-size: 12px;
+    padding: 3%;
+    border-radius: 8px;
+  }
+
+  .add {
+    padding-block: 8px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .advice {
+    font-size: 22px;
+    padding-inline: 3%;
+  }
+
+  .advice span {
+    font-size: 50px;
+    margin-inline: 8px;
+  }
+
+  .anime {
+    width: 75%;
+    height: 30%;
+  }
+
+  .notFound {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .liked {
+    width: 100%;
+    padding: 4px;
+    border-radius: 10px;
+  }
+
+  .head {
+    padding-inline: 2%;
+    padding-block: 3%;
+    border-bottom: 1.5px double gray;
+    padding-top: 7%;
+  }
+
+  .box {
+    padding-inline: 2%;
+    padding-block: 2%;
+    gap: 12px;
+    row-gap: 18px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .each {
+    width: 100%;
+    max-width: 320px;
+    padding: 3%;
+    padding-bottom: 12px;
+  }
+
+  .image {
+    height: 10.5em;
+    margin-top: 10px;
+  }
+
+  .description {
+    font-size: 13px;
+    min-height: 3em;
+    margin-top: 6px;
+  }
+
+  .remove {
+    width: 30%;
+    font-size: 11px;
+    padding: 4.5%;
+  }
+
+  .add {
+    padding-block: 12px;
+    font-size: 12px;
+    margin-top: 1em;
+  }
+
+  .advice {
+    font-size: 20px;
+    padding-inline: 2%;
+  }
+
+  .advice span {
+    font-size: 45px;
+    margin-inline: 6px;
+  }
+
+  .anime {
+    width: 80%;
+    height: 28%;
+  }
+
+  .notFound {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .liked {
+    padding: 3px;
+  }
+
+  .head {
+    padding-inline: 1.5%;
+    padding-block: 3.5%;
+    padding-top: 0px;
+  }
+
+  .box {
+    padding-inline: 1.5%;
+    gap: 10px;
+    row-gap: 15px;
+    padding-top: 4em;
+  }
+
+  .each {
+    width: 100%;
+    padding: 3%;
+    padding-bottom: 10px;
+  }
+
+  .image {
+    height: 11em;
+    margin-top: 8px;
+  }
+
+  .description {
+    font-size: 12px;
+    min-height: 2.8em;
+    margin-top: 5px;
+  }
+
+  .remove {
+    width: 30%;
+    font-size: 10px;
+    padding: 4%;
+  }
+
+  .add {
+    padding-block: 11px;
+    font-size: 11px;
+  }
+
+  .advice {
+    font-size: 18px;
+    padding-inline: 2%;
+  }
+
+  .advice span {
+    font-size: 40px;
+    margin-inline: 5px;
+  }
+
+  .anime {
+    width: 85%;
+    height: 25%;
+  }
+
+  .notFound {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    padding-inline: 1%;
+  }
+
+  .each {
+    width: 100%;
+  }
+
+
+  .head p{
+    width: 70%;
+  }
+  .image {
+    height: 11em;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+
+  .remove {
+    width: 30%;
+    font-size: 9px;
+  }
+
+  .add {
+    font-size: 10px;
+  }
+
+  .advice {
+    font-size: 16px;
+  }
+
+  .advice span {
+    font-size: 35px;
+  }
+
+  .anime {
+    width: 90%;
+    height: 22%;
+  }
+}
