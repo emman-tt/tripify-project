@@ -1,0 +1,204 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 14%;
+
+ width: 100%;
+ padding-top: 4em;
+background-color: rgba(143, 174, 174, 0.24);
+
+}
+
+.logo {
+  font-size: 38px;
+  font-weight: 800;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(43, 41, 41);
+  position: relative;
+  z-index: 10;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.first,.second,.third,.fourth,.fifth{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+    width: 13em;
+    align-items: center;
+    text-align: center;
+
+}
+
+.first{
+    width: 30em;
+    gap: 1px;
+    padding-top: 0;
+}
+
+.eachHead{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 3em;
+    padding-left: 5%;
+    margin-top: 2em;
+    
+}
+
+.bottom div{
+    font-size: 25px;
+   cursor: pointer;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding-inline: 8%;
+  }
+
+  .head {
+    gap: 40px;
+  }
+
+  .first {
+    width: 22em;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-inline: 6%;
+  }
+
+  .head {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .first, .second, .third, .fourth, .fifth {
+    width: 12em;
+    align-items: center;
+  }
+
+  .first {
+    width: 100%;
+    text-align: center;
+  }
+
+  .eachHead {
+    font-size: 18px;
+  }
+
+  .bottom {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    padding-inline: 4%;
+  }
+
+  .head {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .first, .second, .third, .fourth, .fifth {
+    width: 100%;
+    text-align: center;
+  }
+
+  .eachHead {
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 13px;
+  }
+
+  .bottom {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .bottom div {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .eachHead {
+    font-size: 15px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+  .bottom div {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 330px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .eachHead {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 11px;
+  }
+
+  .bottom div {
+    font-size: 16px;
+  }
+}

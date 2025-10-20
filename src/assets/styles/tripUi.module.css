@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amarante&family=Carter+One&family=Nosifer&display=swap");
+
+.box {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  background-color: rgb(255, 255, 255);
+
+  height: 30em;
+  z-index: 14;
+  top: 0px;
+  transform: translateX(100%) translateY(30%);
+  padding-inline: 2%;
+  padding-top: 2%;
+
+  align-items: center;
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.eachRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  /* background-color: aliceblue; */
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.eachField {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-inline: 2%;
+  padding-block: 2%;
+  gap: 10px;
+  height: 100%;
+
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.244);
+  position: relative;
+}
+
+.eachFieldHead {
+  font-size: 13px;
+  color: black;
+  padding-left: 8%;
+  font-weight: 300;
+}
+.eachField input {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  padding-block: 10px;
+  background-color: rgba(93, 108, 225, 0.101);
+  padding-left: 10%;
+  /* font-size: 20px; */
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: rgb(33, 38, 61);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.Overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(25, 26, 27, 0.811);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.Date {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  padding-block: 0px;
+  background-color: rgba(172, 166, 166, 0.027);
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  height: max-content;
+  display: flex;
+}
+
+.DateField {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-inline: 3%;
+  padding-block: 2%;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(113, 113, 151, 0.51);
+  position: relative;
+  padding-right: 0%;
+}
+
+.exchange {
+  position: absolute;
+  left: 91%;
+  top: 30%;
+  font-size: 20px;
+  background-color: rgba(92, 108, 146, 0.105);
+  border-radius: 50em;
+  padding: 2%;
+  padding-inline: 4%;
+}
+
+.numberField {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+  padding-block: 2%;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(113, 113, 151, 0.51);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.guests {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  gap: 10%;
+  justify-content: center;
+  height: 3em;
+}
+
+.guests button {
+  width: 10%;
+  border-radius: 10px;
+  border: 0px;
+  height: 100%;
+  font-size: 27px;
+  background-color: rgba(93, 108, 225, 0.101);
+  cursor: pointer;
+}
+
+.save {
+  width: 90%;
+  height: max-content;
+  border-radius: 14px;
+  background-color: rgb(38, 2, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  margin-top: 5%;
+  padding-block: 2%;
+  color: white;
+}
+
+.header {
+  font-family: "Carter One", system-ui;
+}
+
+.sideNote {
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+.sideNote input {
+  min-height: 5em;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.244);
+  font-size: 15px;
+
+  padding-left: 5%;
+  word-wrap: normal;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  border-radius: 10px;
+}
+
+.sideNote input:focus {
+  border: 1px solid rgba(128, 128, 128, 0.244);
+}
+
+.close {
+  position: absolute;
+  right: 7%;
+  top: 5%;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+@media (max-width: 1024px) {
+  .box {
+    width: 25em;
+    height: auto;
+    padding-inline: 11%;
+    padding-top: 3%;
+    height: max-content;
+    padding-bottom: 3em;
+  }
+
+  .eachFieldHead {
+    font-size: 12px;
+  }
+
+  .guests button {
+    width: 50px;
+  }
+
+  .numberField {
+    width: 19em;
+  }
+  .save {
+    font-size: 17px;
+    width: 130%;
+  }
+}
+
+@media (max-width: 949px) {
+  .box {
+    left: -60%;
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    width: 20em;
+
+    top: -19%;
+    left: -10%;
+    padding-inline: 4%;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 2em;
+  }
+
+  .eachRow {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    margin-top: 4px;
+  }
+
+  .exchange {
+    display: none;
+  }
+
+  .eachField,
+  .DateField {
+    height: 50%;
+  }
+  .numberField {
+    width: 100%;
+    height: max-content;
+  }
+
+  .guests {
+    gap: 15px;
+  }
+
+  .guests button {
+    width: 15%;
+    font-size: 22px;
+  }
+
+  .save {
+    font-size: 16px;
+    height: 40px;
+    width: 9em;
+  }
+}
+
+@media (max-width: 450px) {
+  .box {
+    width: 80%;
+
+    padding-inline: 2%;
+    height: auto;
+    left: -70%;
+    top: -4%;
+  }
+
+  svg {
+    top: 1%;
+    right: 1%;
+  }
+
+  .eachRow {
+    margin-top: 10px;
+  }
+
+  .eachFieldHead {
+    font-size: 10px;
+  }
+
+  .guests button {
+    font-size: 15px;
+  }
+
+  .DateField,
+  .eachField {
+    height: 60px;
+    gap: 0;
+  }
+  .save {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .close{
+    top: 1%;
+    font-size: 23px;
+  }
+
+}
+
+@media (max-width: 398px) {
+  .box {
+    width: 97%;
+    top: -14%;
+    left: -95%;
+    padding-inline: 4%;
+  }
+
+  .eachFieldHead {
+    font-size: 11px;
+  }
+
+  input::placeholder {
+    font-size: 11px;
+  }
+
+  .save {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 330px) {
+  .box {
+    width: 100%;
+    top: -30%;
+    padding-inline: 3%;
+  }
+
+  .eachFieldHead {
+    font-size: 10px;
+  }
+
+  input::placeholder {
+    font-size: 10px;
+  }
+
+  .guests button {
+    font-size: 18px;
+  }
+
+  .save {
+    font-size: 13px;
+  }
+
+  .box {
+    width: 95%;
+
+    padding-inline: 2%;
+    height: auto;
+    left: 3%;
+    transform: translateY(30%);
+  }
+
+  svg {
+    top: 1%;
+    right: 1%;
+  }
+
+  .eachRow {
+    margin-top: 10px;
+  }
+
+  .eachFieldHead {
+    font-size: 10px;
+  }
+
+  .guests button {
+    font-size: 15px;
+  }
+
+  .DateField,
+  .eachField {
+    height: 60px;
+    gap: 0;
+  }
+  .save {
+    font-size: 15px;
+    width: 100%;
+  }
+}
