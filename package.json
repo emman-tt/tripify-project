@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://emman-tt.github.io/tripify-frontend",
-   "scripts": {
+  "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",

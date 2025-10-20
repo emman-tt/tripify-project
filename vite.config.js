@@ -18,5 +18,5 @@ export default defineConfig({
       }
     })
   ],
-  base: '/tripify-frontend/'
+  base: '/',
 })
