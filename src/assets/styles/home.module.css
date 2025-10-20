@@ -252,13 +252,13 @@ input:active {
 }
 
 .error {
-  width: 20em;
+  width: 18em;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.426);
-  left: 40%;
+  left: 10%;
   z-index: 15;
   justify-content: center;
   align-items: center;
