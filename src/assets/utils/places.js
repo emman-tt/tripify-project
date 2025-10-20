@@ -73,7 +73,7 @@ import kazan from '../img/places/russia/kazan.jpg'
 import sochi from '../img/places/russia/sochi.jpg'
 import baikal from '../img/places/russia/baikal.jpg'
 import petersburg from '../img/places/russia/petersburg.jpg'
-import kamchatka from '../img/places/russia/Kamchatka.jpg'
+import kamchatka from '../img/places/russia/kamchatka.jpg'
 
 import christRedeemer from '../img/places/brazil/christRedeemer.jpg'
 import amazonRainforest from '../img/places/brazil/amazonRainforest.jpg'
